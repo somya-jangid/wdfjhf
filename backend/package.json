@@ -1,0 +1,12 @@
+{
+  "name": "train-booking-backend",
+  "version": "1.0.0",
+  "description": "Backend for Train Booking Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
