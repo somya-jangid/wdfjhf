@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Payment</h1>
+  </header>
+  <main class="payment-container">
+    <section class="order-summary">
+      <h2>Order Summary</h2>
+      <p>Train 101 | Station A to Station B</p>
+      <p>Fare: <strong>$45</strong></p>
+    </section>
+    <section class="payment-form">
+      <h2>Enter Payment Details</h2>
+      <form>
+        <div class="form-group">
+          <label>Card Number</label>
+          <input type="text" name="cardNumber" required>
+        </div>
+        <div class="form-group">
+          <label>Card Holder</label>
+          <input type="text" name="cardHolder" required>
+        </div>
+        <div class="form-group">
+          <label>Expiry Date</label>
+          <input type="text" name="expiry" placeholder="MM/YY" required>
+        </div>
+        <div class="form-group">
+          <label>CVV</label>
+          <input type="text" name="cvv" required>
+        </div>
+        <button type="submit" class="btn pay-now">Pay Now</button>
+      </form>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
