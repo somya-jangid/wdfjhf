@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Trains</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Available Trains</h1>
+  </header>
+  <div class="container">
+    <aside class="filters">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <label for="price">Price</label>
+        <input type="range" id="price" name="price" min="0" max="500">
+      </div>
+      <div class="filter-group">
+        <label for="departure">Departure Time</label>
+        <input type="time" id="departure" name="departure">
+      </div>
+      <div class="filter-group">
+        <label for="arrival">Arrival Time</label>
+        <input type="time" id="arrival" name="arrival">
+      </div>
+      <div class="filter-group">
+        <label for="duration">Duration</label>
+        <input type="text" id="duration" name="duration" placeholder="e.g. 3h50m">
+      </div>
+      <div class="filter-group">
+        <label for="type">Train Type</label>
+        <select id="type" name="type">
+          <option>Express</option>
+          <option>Local</option>
+        </select>
+      </div>
+    </aside>
+    <main class="results">
+      <div class="train-card">
+        <h3>Train 101</h3>
+        <p>Departure: 09:00 AM at Station A</p>
+        <p>Arrival: 12:00 PM at Station B</p>
+        <p>Duration: 3h</p>
+        <p class="price">$45</p>
+        <p>Available Seats: 2 seats left</p>
+        <a href="train-details.html" class="btn">View Details</a>
+      </div>
+      <div class="train-card">
+        <h3>Train 202</h3>
+        <p>Departure: 01:00 PM at Station C</p>
+        <p>Arrival: 04:30 PM at Station D</p>
+        <p>Duration: 3h30m</p>
+        <p class="price">$55</p>
+        <p>Available Seats: 5 seats left</p>
+        <a href="train-details.html" class="btn">View Details</a>
+      </div>
+      <!-- Additional train cards can be added here -->
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
