@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="train-header">
+    <h1>Train 101</h1>
+    <p>Departure: 09:00 AM at Station A | Arrival: 12:00 PM at Station B</p>
+    <p>Duration: 3h</p>
+  </header>
+  <section class="train-image">
+    <img src="https://www.pexels.com/photo/people-sitting-inside-train-2821797/" alt="Train Interior">
+  </section>
+  <section class="train-details">
+    <div class="tabs">
+      <button class="tablink active" onclick="openTab(event, 'Overview')">Overview</button>
+      <button class="tablink" onclick="openTab(event, 'Schedule')">Schedule</button>
+      <button class="tablink" onclick="openTab(event, 'Amenities')">Amenities</button>
+      <button class="tablink" onclick="openTab(event, 'Reviews')">Reviews</button>
+    </div>
+    <div id="Overview" class="tabcontent" style="display:block;">
+      <p>This train offers a comfortable journey with modern amenities and a glassmorphic design experience.</p>
+    </div>
+    <div id="Schedule" class="tabcontent">
+      <p>Detailed timetable and stops information.</p>
+    </div>
+    <div id="Amenities" class="tabcontent">
+      <p>Wi-Fi, Power Outlets, Food Service, and more.</p>
+    </div>
+    <div id="Reviews" class="tabcontent">
+      <p>User reviews and ratings will be displayed here.</p>
+    </div>
+  </section>
+  <section class="booking-section">
+    <div class="price-info">
+      <p>Fare: <strong>$45</strong></p>
+    </div>
+    <a href="passenger.html" class="btn book-now">Book Now</a>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
